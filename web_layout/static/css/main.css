@@ -1,0 +1,22 @@
+/* 초기화 코드 */
+* {margin: 0; padding: 0;}
+li{list-style: none;}
+a {text-decoration: none;}
+img {border: 0}
+
+/* Header */
+#main_header{
+    width: 960px; margin: 0px auto;   /*중앙 정렬 ?*/
+    height: 160px; position: relative; /*절대 좌표 ?*/
+} 
+#main_header > #title{
+    position: absolute; left: 20px; top: 30px;
+}
+/* 메뉴1 */
+#main_header > #main_gnb{
+    position: absolute; right: 0; top: 0;
+}
+/* 메뉴2*/
+#main_header > #main_lnb{
+    position: absolute; right: 0; top: 0;
+}
