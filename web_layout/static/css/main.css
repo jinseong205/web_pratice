@@ -4,6 +4,41 @@ li{list-style: none;}
 a {text-decoration: none;}
 img {border: 0}
 
+/* font import */
+@font-face {
+    font-family: robotoFont ;
+    src: url("./font/Roboto-Black.woff");
+}
+@font-face {
+    font-family: robotoFont ;
+    src: url("./font/Roboto-BlackItalic.woff");
+}
+@font-face {
+    font-family: robotoFont ;
+    src: url("./font/Roboto-Bold.woff");
+}
+@font-face {
+    font-family: robotoFont ;
+    src: url("./font/Roboto-BoldItalic.woff");
+}
+@font-face {
+    font-family: robotoFont ;
+    src: url("./font/Roboto-Italic.woff");
+}
+@font-face {
+    font-family: robotoFont ;
+    src: url("./font/Roboto-Light.woff");
+}
+@font-face {
+    font-family: robotoFont ;
+    src: url("./font/Roboto-LightItalic.woff");
+}
+@font-face {
+    font-family: robotoFont ;
+    src: url("./font/Roboto-Black.woff");
+}
+
+
 /* Header */
 #main_header{
     width: 960px; margin: 0px auto;   /*중앙 정렬 ?*/
@@ -11,6 +46,7 @@ img {border: 0}
 } 
 #main_header > #title{
     position: absolute; left: 20px; top: 30px;
+    font-family: robotoFont;
 }
 /* 메뉴1 */
 #main_header > #main_gnb{
