@@ -80,3 +80,14 @@ img {border: 0}
 #main_lnb > ul > li:first-child > a{ border-radius: 10px 0 0 10px;}
 #main_lnb > ul > li:last-child > a{ border-radius: 0 10px 10px 0;}
 
+/* 본문 */
+#content {
+    width: 960px; margin: 0 auto; /* 중앙정렬 */
+    overflow: hidden; /* 수평 레이아웃 구성*/
+}
+#content > #main_section{
+    width: 750px; float: left;
+}
+#content > #main_side{
+    width: 200px; float: right;
+}
