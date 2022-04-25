@@ -1,9 +1,3 @@
-/* 초기화 코드 */
-* {margin: 0; padding: 0;}
-li{list-style: none;}
-a {text-decoration: none;}
-img {border: 0}
-
 /* font import */
 @font-face {font-family: robotoFont; src: url("./font/Roboto-Black.woff");}
 @font-face {font-family: robotoFont; src: url("./font/Roboto-BlackItalic.woff");}
@@ -13,6 +7,12 @@ img {border: 0}
 @font-face {font-family: robotoFont; src: url("./font/Roboto-Light.woff");}
 @font-face {font-family: robotoFont; src: url("./font/Roboto-LightItalic.woff");}
 @font-face {font-family: robotoFont; src: url("./font/Roboto-Black.woff");}
+
+/* 초기화 코드 */
+* {margin: 0; padding: 0;}
+li{list-style: none;}
+a {text-decoration: none;}
+img {border: 0}
 
 /* Header */
 #main_header{
@@ -55,7 +55,7 @@ img {border: 0}
     overflow: hidden; /* 수평 레이아웃 구성*/
 }
 #content > #main_section{width: 750px; float: left;}
-#content > #main_side{width: 200px; float: right;}
+#content > #main_aside{width: 200px; float: right;}
 
 #main_section > article.main_article{margin-bottom: 10px; padding: 20px; border: 1px solid black}
 
@@ -65,11 +65,13 @@ img {border: 0}
 input:nth-of-type(1){display: none;}
 input:nth-of-type(1) ~ div:nth-of-type(1){display: none;}
 input:nth-of-type(1):checked ~ div:nth-of-type(1){display: block;}
+
 /* Tab2 */
 input:nth-of-type(2){display: none;}
 input:nth-of-type(2) ~ div:nth-of-type(2){display: none;}
 input:nth-of-type(2):checked ~ div:nth-of-type(2){display: block;}
-/*탭 모양*/
+
+/* 탭 모양 */
 section.buttons{overflow: hidden;}
 section.buttons > label{
     display: block; float: left; /*수평정렬*/
@@ -79,3 +81,22 @@ section.buttons > label{
 }
 input:nth-of-type(1):checked ~ section > label:nth-of-type(1){background-color: white; color:black;}
 input:nth-of-type(2):checked ~ section > label:nth-of-type(2){background-color: white; color:black;}
+
+/* 탭 아이템 */
+.item{
+    overflow: hidden; padding: 10px;
+    border: 1px solid black; border-top: none; 
+}
+.thumbnail{float:left;}
+.description{float:left; margin-left: 10px;}
+.description > strong{
+    display: block; width: 120px;
+    white-space: nowrap; overflow: hidden; text-overflow: hidden; /*글자 생략*/
+}
+
+/* Footer */
+#main_footer{
+    width: 960px; margin: 0 auto; margin-bottom:10px; /*중앙정렬*/
+    box-sizing:border-box; padding: 10px; border: 1px solid black; /*테두리*/
+    text-align: center; /*글자 정렬*/
+}

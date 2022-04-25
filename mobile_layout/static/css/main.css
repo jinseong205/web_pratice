@@ -1,0 +1,20 @@
+/* font import */
+@font-face {font-family: robotoFont; src: url("./font/Roboto-Black.woff");}
+@font-face {font-family: robotoFont; src: url("./font/Roboto-BlackItalic.woff");}
+@font-face {font-family: robotoFont; src: url("./font/Roboto-Bold.woff");}
+@font-face {font-family: robotoFont; src: url("./font/Roboto-BoldItalic.woff");}
+@font-face {font-family: robotoFont; src: url("./font/Roboto-Italic.woff");}
+@font-face {font-family: robotoFont; src: url("./font/Roboto-Light.woff");}
+@font-face {font-family: robotoFont; src: url("./font/Roboto-LightItalic.woff");}
+@font-face {font-family: robotoFont; src: url("./font/Roboto-Black.woff");}
+
+/* 초기화 코드 */
+* {margin: 0; padding: 0;}
+li{list-style: none;}
+a {text-decoration: none;}
+img {border: 0}
+
+/* header */
+#main_header{
+    height: 100px; background-color darkred; /*배경지정*/
+}
